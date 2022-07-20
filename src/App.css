@@ -62,3 +62,10 @@
 .right-nav-icons {
   cursor: pointer;
 }
+
+.authForm {
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  
+}

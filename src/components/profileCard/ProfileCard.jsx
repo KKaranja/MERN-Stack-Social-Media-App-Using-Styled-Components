@@ -100,6 +100,11 @@ const MyProfile = styled.span`
 
 const Posts = styled.span``;
 
+const PostsCont = styled.span`
+  color: var(--gray);
+  font-size: 13px;
+`;
+
 const ProfileCard = () => {
   const ProfilePage = true;
 
@@ -130,8 +135,10 @@ const ProfileCard = () => {
             <>
               <FollowVerticalLine></FollowVerticalLine>
               <Follow>
-                <Posts>3 </Posts>
-                <Posts>Posts</Posts>
+                <Posts>
+                  <b>3</b>
+                </Posts>
+                <PostsCont>Posts</PostsCont>
               </Follow>
             </>
           )}
