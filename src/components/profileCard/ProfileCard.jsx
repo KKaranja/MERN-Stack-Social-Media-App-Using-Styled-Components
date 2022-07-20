@@ -98,7 +98,11 @@ const MyProfile = styled.span`
   cursor: pointer;
 `;
 
+const Posts = styled.span``;
+
 const ProfileCard = () => {
+  const ProfilePage = true;
+
   return (
     <ProfileCardContainer>
       <ProfileCardImagesContainer>
@@ -121,10 +125,20 @@ const ProfileCard = () => {
             <FollowNumber>1</FollowNumber>
             <FollowText>Followers</FollowText>
           </Follow>
+
+          {ProfilePage && (
+            <>
+              <FollowVerticalLine></FollowVerticalLine>
+              <Follow>
+                <Posts>3 </Posts>
+                <Posts>Posts</Posts>
+              </Follow>
+            </>
+          )}
         </FollowContainer>
         <HorizontalLine />
       </FollowStatusContainer>
-      <MyProfile>My Profile</MyProfile>
+      {ProfilePage ? "" : <MyProfile>My Profile</MyProfile>}
     </ProfileCardContainer>
   );
 };

@@ -23,13 +23,15 @@ const PostImage = styled.img`
 `;
 
 const PostReaction = styled.div`
-display: flex;
-align-items: flex-start;
-gap: 1.5rem;
-
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 `;
 
-const Likes = styled.span``;
+const Likes = styled.span`
+  color: var(--gray);
+  font-size: 12px;
+`;
 
 const Details = styled.div``;
 
