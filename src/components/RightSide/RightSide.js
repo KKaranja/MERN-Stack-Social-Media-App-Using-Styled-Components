@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import HomeSharpIcon from "@mui/icons-material/HomeSharp";
+import SettingsIcon from "@mui/icons-material/Settings";
+import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
+import CommentIcon from "@mui/icons-material/Comment";
 
 import Home from "../../img/home.png";
 import Noti from "../../img/noti.png";
@@ -36,10 +40,10 @@ const RightSide = () => {
   return (
     <RightSideContainer>
       <NavIcons>
-        <NavImage src={Home} alt='' />
-        <UilSetting style={{ cursor: "pointer" }} />
-        <NavImage src={Noti} alt='' />
-        <NavImage src={Comment} alt='' />
+        <HomeSharpIcon style={{ color: "var(--orange)" }}className="right-nav-icons" />
+        <SettingsIcon className="right-nav-icons"/>
+        <CircleNotificationsIcon className="right-nav-icons"/>
+        <CommentIcon className="right-nav-icons"/>
       </NavIcons>
       <TrendCard />
       <ShareBtn className='button'>Share</ShareBtn>

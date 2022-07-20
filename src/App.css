@@ -58,3 +58,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.right-nav-icons {
+  cursor: pointer;
+}
